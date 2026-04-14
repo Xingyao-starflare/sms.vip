@@ -78,7 +78,7 @@ const Footer = ({ language }: FooterProps) => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Logo className="h-12 md:h-14 w-auto" />
+              <Logo className="h-16 md:h-20 w-auto" />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">{t.tagline}</p>
           </div>

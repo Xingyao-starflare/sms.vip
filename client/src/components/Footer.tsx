@@ -1,3 +1,5 @@
+import Logo from './Logo';
+
 interface FooterProps {
   language: 'zh' | 'en';
 }
@@ -76,7 +78,7 @@ const Footer = ({ language }: FooterProps) => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-transparent-hChBqCB3VXSdBrcz8CAWxm.webp" alt="SMS 闪信" className="h-14 w-auto" />
+              <Logo className="h-16 w-auto" />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">{t.tagline}</p>
           </div>

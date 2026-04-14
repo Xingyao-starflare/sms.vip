@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X, Globe } from 'lucide-react';
+import Logo from './Logo';
 
 interface HeaderProps {
   language: 'zh' | 'en';
@@ -37,7 +38,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-transparent-hChBqCB3VXSdBrcz8CAWxm.webp" alt="SMS 闪信" className="h-14 w-auto" />
+              <Logo className="h-16 w-auto" />
             </a>
           </Link>
 

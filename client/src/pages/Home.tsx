@@ -19,41 +19,6 @@ const Home = () => {
         description: '闪信SMS提供全球领先的国际短信服务，帮助企业快速、可靠地与全球客户沟通。闪信SMS:高触达，全覆盖，快响应，一站式短信通讯解决方案，助力品牌一键出海',
         cta: '联系我们'
       },
-      features: {
-        title: '为什么选择闪信SMS',
-        items: [
-          {
-            icon: '⚡',
-            title: '极速发送',
-            description: '毫秒级送达，确保您的信息及时传递到全球客户',
-          },
-          {
-            icon: '🌍',
-            title: '全球覆盖',
-            description: '支持超过200个国家和地区，无缝连接全球市场',
-          },
-          {
-            icon: '🔒',
-            title: '安全可靠',
-            description: '采用先进的加密技术，确保数据安全和隐私保护',
-          },
-          {
-            icon: '💰',
-            title: '灵活定价',
-            description: '按需付费，无隐藏费用，透明的价格体系',
-          },
-          {
-            icon: '📊',
-            title: '详细报告',
-            description: '实时数据分析，掌握每一条短信的发送状态',
-          },
-          {
-            icon: '👥',
-            title: '专业支持',
-            description: '24/7技术支持团队，随时为您解答问题',
-          },
-        ],
-      },
       pricing: {
         title: '价格',
         subtitle: '透明的价格体系，满足不同需求',
@@ -93,6 +58,41 @@ const Home = () => {
           }
         },
         note: '更多国家和地区的价格请联系我们客服获取。',
+      },
+      features: {
+        title: '为什么选择闪信SMS',
+        items: [
+          {
+            icon: '⚡',
+            title: '极速发送',
+            description: '毫秒级送达，确保您的信息及时传递到全球客户',
+          },
+          {
+            icon: '🌍',
+            title: '全球覆盖',
+            description: '支持超过200个国家和地区，无缝连接全球市场',
+          },
+          {
+            icon: '🔒',
+            title: '安全可靠',
+            description: '采用先进的加密技术，确保数据安全和隐私保护',
+          },
+          {
+            icon: '💰',
+            title: '灵活定价',
+            description: '按需付费，无隐藏费用，透明的价格体系',
+          },
+          {
+            icon: '📊',
+            title: '详细报告',
+            description: '实时数据分析，掌握每一条短信的发送状态',
+          },
+          {
+            icon: '👥',
+            title: '专业支持',
+            description: '24/7技术支持团队，随时为您解答问题',
+          },
+        ],
       },
       services: {
         title: '我们的服务',
@@ -168,41 +168,6 @@ const Home = () => {
         description: 'Shanxin SMS provides world-leading international SMS services to help enterprises communicate quickly and reliably with global customers',
         cta: 'Contact Us',
       },
-      features: {
-        title: 'Why Choose Shanxin SMS',
-        items: [
-          {
-            icon: '⚡',
-            title: 'Lightning Fast',
-            description: 'Millisecond delivery ensures your messages reach global customers instantly',
-          },
-          {
-            icon: '🌍',
-            title: 'Global Coverage',
-            description: 'Support for 200+ countries and regions, seamless global market connection',
-          },
-          {
-            icon: '🔒',
-            title: 'Secure & Reliable',
-            description: 'Advanced encryption technology ensures data security and privacy protection',
-          },
-          {
-            icon: '💰',
-            title: 'Flexible Pricing',
-            description: 'Pay-as-you-go model with no hidden fees, transparent pricing',
-          },
-          {
-            icon: '📊',
-            title: 'Detailed Reports',
-            description: 'Real-time analytics to track every SMS delivery status',
-          },
-          {
-            icon: '👥',
-            title: 'Expert Support',
-            description: '24/7 technical support team ready to assist you anytime',
-          },
-        ],
-      },
       pricing: {
         title: 'Pricing',
         subtitle: 'Transparent pricing for different needs',
@@ -242,6 +207,41 @@ const Home = () => {
           }
         },
         note: 'For pricing of more countries and regions, please contact our customer service.',
+      },
+      features: {
+        title: 'Why Choose Shanxin SMS',
+        items: [
+          {
+            icon: '⚡',
+            title: 'Lightning Fast',
+            description: 'Millisecond delivery ensures your messages reach global customers instantly',
+          },
+          {
+            icon: '🌍',
+            title: 'Global Coverage',
+            description: 'Support for 200+ countries and regions, seamless global market connection',
+          },
+          {
+            icon: '🔒',
+            title: 'Secure & Reliable',
+            description: 'Advanced encryption technology ensures data security and privacy protection',
+          },
+          {
+            icon: '💰',
+            title: 'Flexible Pricing',
+            description: 'Pay-as-you-go model with no hidden fees, transparent pricing',
+          },
+          {
+            icon: '📊',
+            title: 'Detailed Reports',
+            description: 'Real-time analytics to track every SMS delivery status',
+          },
+          {
+            icon: '👥',
+            title: 'Expert Support',
+            description: '24/7 technical support team ready to assist you anytime',
+          },
+        ],
       },
       services: {
         title: 'Our Services',
@@ -371,47 +371,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {t.features.title}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {t.features.items.map((item, index) => (
-              <div
-                key={index}
-                className="card-gradient p-8 rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 transform hover:scale-105"
-              >
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-slate-400">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {t.stats.items.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-cyan-400 mb-2">
-                  {stat.number}
-                </div>
-                <p className="text-slate-400">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section - Merged from Pricing Page */}
+      {/* Pricing Section - Moved to Top */}
       <section className="py-20 px-4 bg-slate-900/50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
@@ -493,6 +453,46 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {t.stats.items.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-cyan-400 mb-2">
+                  {stat.number}
+                </div>
+                <p className="text-slate-400">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 px-4 bg-slate-900/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              {t.features.title}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {t.features.items.map((item, index) => (
+              <div
+                key={index}
+                className="card-gradient p-8 rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 transform hover:scale-105"
+              >
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-slate-400">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
@@ -522,17 +522,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section - 2 Column Layout */}
       <section className="py-20 px-4 bg-slate-900/50">
-        <div className="container mx-auto max-w-3xl">
+        <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">
             {t.faq.title}
           </h2>
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {t.faq.items.map((item, idx) => (
-              <div key={idx} className="bg-slate-800 border border-slate-700 rounded-lg p-6">
+              <div key={idx} className="bg-slate-800 border border-slate-700 rounded-lg p-6 h-full flex flex-col">
                 <h3 className="text-lg font-bold text-white mb-3">{item.q}</h3>
-                <p className="text-slate-400">{item.a}</p>
+                <p className="text-slate-400 flex-grow">{item.a}</p>
               </div>
             ))}
           </div>

@@ -34,16 +34,16 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-slate-900 to-slate-900/80 backdrop-blur-sm border-b border-slate-700">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 py-2">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center hover:opacity-80 transition-opacity mx-5">
-              <Logo className="h-[65%] max-h-[44px] w-auto" />
+            <a className="flex items-center hover:opacity-80 transition-opacity mr-6">
+              <Logo className="h-10 w-auto" />
             </a>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-8 flex-1">
             {navItems[language].map((item) => (
               <Link key={item.href} href={item.href}>
                 <a
@@ -60,7 +60,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           </nav>
 
           {/* Right Controls */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 ml-auto">
             {/* Language Switcher */}
             <div className="flex items-center gap-2 bg-slate-800 rounded-lg p-1">
               <button
@@ -90,7 +90,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
               href="https://ok.sms.vip"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg transition-colors font-semibold"
+              className="hidden sm:flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2.5 rounded-lg transition-colors font-semibold h-10 whitespace-nowrap"
             >
               <Globe className="w-4 h-4" />
               {language === 'zh' ? '登录' : 'Login'}

@@ -17,12 +17,14 @@ const Logo = ({ className, forceWhite = true }: LogoProps) => {
         src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-optimized_03d08656.png"
         alt="SMS 闪信"
         className={cn(
-          "h-full w-auto max-h-[44px] object-contain transition-all duration-300",
+          "h-full w-auto object-contain transition-all duration-300",
           forceWhite && "brightness-0 invert"
         )}
         style={{ 
           // Ensure contrast ratio is maintained on dark backgrounds
-          filter: forceWhite ? 'brightness(0) invert(1)' : undefined 
+          // Set opacity to 0.95 for natural blending with background
+          filter: forceWhite ? 'brightness(0) invert(1) opacity(0.95)' : undefined,
+          opacity: forceWhite ? 0.95 : 1
         }}
       />
     </div>

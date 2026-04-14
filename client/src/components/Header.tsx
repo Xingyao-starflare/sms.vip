@@ -38,7 +38,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center hover:opacity-80 transition-opacity mr-6">
-              <Logo className="h-10 w-auto" />
+              <Logo className="h-32 w-auto" />
             </a>
           </Link>
 
@@ -61,8 +61,19 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
 
           {/* Right Controls */}
           <div className="flex items-center gap-4 ml-auto">
-            {/* Language Switcher */}
-            <div className="flex items-center gap-2 bg-slate-800 rounded-lg p-1">
+            {/* Login Button - Moved to front for mobile visibility */}
+            <a
+              href="https://ok.sms.vip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2.5 rounded-lg transition-colors font-semibold h-10 whitespace-nowrap"
+            >
+              <Globe className="w-4 h-4" />
+              {language === 'zh' ? '登录' : 'Login'}
+            </a>
+
+            {/* Language Switcher - Moved after login button */}
+            <div className="hidden sm:flex items-center gap-2 bg-slate-800 rounded-lg p-1">
               <button
                 onClick={() => onLanguageChange('zh')}
                 className={`px-3 py-1 rounded transition-colors ${
@@ -84,17 +95,6 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
                 EN
               </button>
             </div>
-
-            {/* Login Button */}
-            <a
-              href="https://ok.sms.vip"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2.5 rounded-lg transition-colors font-semibold h-10 whitespace-nowrap"
-            >
-              <Globe className="w-4 h-4" />
-              {language === 'zh' ? '登录' : 'Login'}
-            </a>
 
             {/* Mobile Menu Button */}
             <button

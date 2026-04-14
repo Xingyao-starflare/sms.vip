@@ -37,10 +37,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
-              <span className="text-white font-bold text-xl hidden sm:inline">闪信SMS</span>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/短信平台Logo_0a960f33.png" alt="SMS Logo" className="h-10 w-auto" />
             </a>
           </Link>
 
@@ -87,15 +84,15 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
               </button>
             </div>
 
-            {/* Telegram Chat Button */}
+            {/* Login Button */}
             <a
-              href="https://t.me/sms_shanxin"
+              href="https://ok.sms.vip"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg transition-colors font-semibold"
             >
               <Globe className="w-4 h-4" />
-              {language === 'zh' ? '聊天' : 'Chat'}
+              {language === 'zh' ? '登录' : 'Login'}
             </a>
 
             {/* Mobile Menu Button */}
@@ -126,12 +123,12 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
               </Link>
             ))}
             <a
-              href="https://t.me/sms_shanxin"
+              href="https://ok.sms.vip"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-4 py-3 text-cyan-400 font-semibold hover:bg-slate-800 transition-colors"
             >
-              {language === 'zh' ? '📱 Telegram 聊天' : '📱 Telegram Chat'}
+              {language === 'zh' ? '登录' : 'Login'}
             </a>
           </nav>
         )}

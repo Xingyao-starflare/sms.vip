@@ -4,9 +4,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 type Language = 'zh' | 'en';
+type PricingType = 'message' | 'voice';
 
 const Home = () => {
   const [language, setLanguage] = useState<Language>('zh');
+  const [pricingType, setPricingType] = useState<PricingType>('message');
 
   const content = {
     zh: {
@@ -52,6 +54,46 @@ const Home = () => {
           },
         ],
       },
+      pricing: {
+        title: '价格',
+        subtitle: '透明的价格体系，满足不同需求',
+        description: '选择适合您的服务，享受优质的国际短信和语音服务',
+        tabs: {
+          message: '营销短信',
+          voice: '验证码',
+        },
+        data: {
+          message: {
+            title: '营销短信价格',
+            unit: 'USD/条',
+            countries: [
+              { name: '印度尼西亚', code: 'ID', price: '' },
+              { name: '印度', code: 'IN', price: '' },
+              { name: '巴西', code: 'BR', price: '' },
+              { name: '墨西哥', code: 'MX', price: '' },
+              { name: '菲律宾', code: 'PH', price: '' },
+              { name: '越南', code: 'VN', price: '' },
+              { name: '泰国', code: 'TH', price: '' },
+              { name: '孟加拉', code: 'BD', price: '' },
+            ],
+          },
+          voice: {
+            title: '验证码价格',
+            unit: 'USD/条',
+            countries: [
+              { name: '印度尼西亚', code: 'ID', price: '' },
+              { name: '印度', code: 'IN', price: '' },
+              { name: '巴西', code: 'BR', price: '' },
+              { name: '墨西哥', code: 'MX', price: '' },
+              { name: '菲律宾', code: 'PH', price: '' },
+              { name: '越南', code: 'VN', price: '' },
+              { name: '泰国', code: 'TH', price: '' },
+              { name: '孟加拉', code: 'BD', price: '' },
+            ],
+          }
+        },
+        note: '更多国家和地区的价格请联系我们客服获取。',
+      },
       services: {
         title: '我们的服务',
         description: '满足不同行业的个性化需求',
@@ -89,6 +131,27 @@ const Home = () => {
           { number: '99.9%', label: '送达率' },
           { number: '24/7', label: '技术支持' },
           { number: '10000+', label: '企业客户' },
+        ],
+      },
+      faq: {
+        title: '常见问题',
+        items: [
+          {
+            q: '如何开始使用？',
+            a: '注册账户后，充值余额即可立即开始发送短信。我们提供详细的API文档和示例代码。',
+          },
+          {
+            q: '支持哪些支付方式？',
+            a: '我们支持USDT/USDC,银行转账,支付宝,微信等多种支付方式。',
+          },
+          {
+            q: '短信有效期是多久？',
+            a: '短信通常在发送后几秒内送达。如果未送达，我们会自动重试。',
+          },
+          {
+            q: '可以发送中文短信吗？',
+            a: '可以。我们完全支持中文、英文及其他多种语言的短信发送。',
+          },
         ],
       },
       cta: {
@@ -140,6 +203,46 @@ const Home = () => {
           },
         ],
       },
+      pricing: {
+        title: 'Pricing',
+        subtitle: 'Transparent pricing for different needs',
+        description: 'Choose the service that fits your business and enjoy quality international SMS and voice services',
+        tabs: {
+          message: 'Marketing SMS',
+          voice: 'Verification Code',
+        },
+        data: {
+          message: {
+            title: 'Marketing SMS Pricing',
+            unit: 'USD/SMS',
+            countries: [
+              { name: 'Indonesia', code: 'ID', price: '' },
+              { name: 'India', code: 'IN', price: '' },
+              { name: 'Brazil', code: 'BR', price: '' },
+              { name: 'Mexico', code: 'MX', price: '' },
+              { name: 'Philippines', code: 'PH', price: '' },
+              { name: 'Vietnam', code: 'VN', price: '' },
+              { name: 'Thailand', code: 'TH', price: '' },
+              { name: 'Bangladesh', code: 'BD', price: '' },
+            ],
+          },
+          voice: {
+            title: 'Verification Code Pricing',
+            unit: 'USD/SMS',
+            countries: [
+              { name: 'Indonesia', code: 'ID', price: '' },
+              { name: 'India', code: 'IN', price: '' },
+              { name: 'Brazil', code: 'BR', price: '' },
+              { name: 'Mexico', code: 'MX', price: '' },
+              { name: 'Philippines', code: 'PH', price: '' },
+              { name: 'Vietnam', code: 'VN', price: '' },
+              { name: 'Thailand', code: 'TH', price: '' },
+              { name: 'Bangladesh', code: 'BD', price: '' },
+            ],
+          }
+        },
+        note: 'For pricing of more countries and regions, please contact our customer service.',
+      },
       services: {
         title: 'Our Services',
         description: 'Customized solutions for different industries',
@@ -179,6 +282,27 @@ const Home = () => {
           { number: '10000+', label: 'Enterprise Clients' },
         ],
       },
+      faq: {
+        title: 'FAQ',
+        items: [
+          {
+            q: 'How do I get started?',
+            a: 'Sign up for an account, add credit, and start sending SMS immediately. We provide detailed API documentation and code samples.',
+          },
+          {
+            q: 'What payment methods do you accept?',
+            a: 'We support USDT/USDC, bank transfer, Alipay, WeChat Pay and other payment methods.',
+          },
+          {
+            q: 'How long does SMS delivery take?',
+            a: 'SMS typically arrives within seconds of sending. If not delivered, we automatically retry.',
+          },
+          {
+            q: 'Can I send Chinese SMS?',
+            a: 'Yes, we fully support Chinese, English, and many other languages for SMS delivery.',
+          },
+        ],
+      },
       cta: {
         title: 'Ready to Get Started?',
         description: 'Start using Shanxin SMS today and experience world-leading SMS services',
@@ -188,6 +312,7 @@ const Home = () => {
   };
 
   const t = content[language];
+  const currentPricing = t.pricing.data[pricingType];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950">
@@ -286,8 +411,90 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Pricing Section - Merged from Pricing Page */}
       <section className="py-20 px-4 bg-slate-900/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              {t.pricing.title}
+            </h2>
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-4">
+              {t.pricing.subtitle}
+            </p>
+            <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+              {t.pricing.description}
+            </p>
+          </div>
+
+          {/* Tab Buttons */}
+          <div className="flex justify-center gap-4 mb-12">
+            <button
+              onClick={() => setPricingType('message')}
+              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                pricingType === 'message'
+                  ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              {t.pricing.tabs.message}
+            </button>
+            <button
+              onClick={() => setPricingType('voice')}
+              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                pricingType === 'voice'
+                  ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              {t.pricing.tabs.voice}
+            </button>
+          </div>
+
+          {/* Pricing Table */}
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-8 text-center">
+              {currentPricing.title}
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="text-left py-4 px-6 text-white font-semibold">
+                      {language === 'zh' ? '国家' : 'Country'}
+                    </th>
+                    <th className="text-left py-4 px-6 text-white font-semibold">
+                      {language === 'zh' ? '国家代码' : 'Code'}
+                    </th>
+                    <th className="text-left py-4 px-6 text-white font-semibold">
+                      {language === 'zh' ? '单价' : 'Price'} ({currentPricing.unit})
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {currentPricing.countries.map((country, idx) => (
+                    <tr
+                      key={idx}
+                      className="border-b border-slate-700 hover:bg-slate-800/50 transition-colors"
+                    >
+                      <td className="py-4 px-6 text-slate-300">{country.name}</td>
+                      <td className="py-4 px-6 text-slate-400">{country.code}</td>
+                      <td className="py-4 px-6 text-cyan-400 font-semibold">
+                        {country.price || '—'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-center text-slate-300 mt-8 text-base font-semibold">
+              {t.pricing.note}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -309,6 +516,23 @@ const Home = () => {
                     <p className="text-slate-400">{service.description}</p>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-4 bg-slate-900/50">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">
+            {t.faq.title}
+          </h2>
+          <div className="space-y-6">
+            {t.faq.items.map((item, idx) => (
+              <div key={idx} className="bg-slate-800 border border-slate-700 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-white mb-3">{item.q}</h3>
+                <p className="text-slate-400">{item.a}</p>
               </div>
             ))}
           </div>

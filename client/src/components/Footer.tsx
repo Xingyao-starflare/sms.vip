@@ -76,9 +76,7 @@ const Footer = ({ language }: FooterProps) => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/短信平台Logo_0a960f33.png" alt="SMS Logo" className="h-10 w-auto" />
               <div>
                 <h3 className="text-white font-bold text-lg">{t.company}</h3>
               </div>

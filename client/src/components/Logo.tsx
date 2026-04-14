@@ -1,7 +1,7 @@
-const Logo = ({ className = "h-14 w-auto" }: { className?: string }) => {
+const Logo = ({ className = "h-12 w-auto" }: { className?: string }) => {
   return (
     <svg
-      viewBox="0 0 380 100"
+      viewBox="0 0 320 80"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
@@ -13,81 +13,84 @@ const Logo = ({ className = "h-14 w-auto" }: { className?: string }) => {
           <stop offset="100%" stopColor="#00D9A3" />
         </linearGradient>
         <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-          <feDropShadow dx="0" dy="2" stdDeviation="3" floodOpacity="0.2" />
+          <feDropShadow dx="0" dy="1" stdDeviation="2" floodOpacity="0.15" />
         </filter>
       </defs>
 
-      {/* Chat Bubble Icon - Refined Design */}
+      {/* Chat Bubble Icon - Centered vertically at y=40 */}
       <g filter="url(#shadow)">
         {/* Main bubble body */}
         <path
-          d="M 20 15 C 20 15 15 15 15 25 C 15 35 15 45 20 50 C 25 55 30 55 35 55 L 40 65 L 35 55 C 45 55 55 55 60 50 C 65 45 65 35 65 25 C 65 15 55 15 45 15 C 35 15 25 15 20 15 Z"
+          d="M 12 20 C 12 20 8 20 8 28 C 8 36 8 44 12 48 C 16 52 20 52 24 52 L 28 60 L 24 52 C 32 52 40 52 44 48 C 48 44 48 36 48 28 C 48 20 40 20 32 20 C 24 20 16 20 12 20 Z"
           fill="url(#smsGradient)"
           opacity="0.95"
         />
 
-        {/* Highlight/shine effect on bubble */}
+        {/* Highlight on bubble */}
         <ellipse
-          cx="35"
-          cy="25"
-          rx="12"
-          ry="8"
+          cx="24"
+          cy="28"
+          rx="8"
+          ry="5"
           fill="white"
           opacity="0.15"
         />
 
-        {/* Three dots inside bubble - more refined */}
-        <circle cx="28" cy="38" r="2.5" fill="white" />
-        <circle cx="40" cy="38" r="2.5" fill="white" />
-        <circle cx="52" cy="38" r="2.5" fill="white" />
+        {/* Three dots inside bubble */}
+        <circle cx="18" cy="36" r="2" fill="white" />
+        <circle cx="28" cy="36" r="2" fill="white" />
+        <circle cx="38" cy="36" r="2" fill="white" />
 
-        {/* Communication waves - curved lines */}
+        {/* Communication waves */}
         <path
-          d="M 68 22 Q 75 18 82 16"
+          d="M 50 24 Q 56 20 62 18"
           stroke="url(#smsGradient)"
-          strokeWidth="2.5"
+          strokeWidth="2"
           fill="none"
           strokeLinecap="round"
         />
         <path
-          d="M 70 32 Q 78 28 86 26"
+          d="M 52 32 Q 59 28 66 26"
           stroke="url(#smsGradient)"
-          strokeWidth="2.5"
+          strokeWidth="2"
           fill="none"
           strokeLinecap="round"
         />
         <path
-          d="M 68 42 Q 76 38 84 36"
+          d="M 50 40 Q 57 36 64 34"
           stroke="url(#smsGradient)"
-          strokeWidth="2.5"
+          strokeWidth="2"
           fill="none"
           strokeLinecap="round"
         />
       </g>
 
-      {/* SMS Text - Better positioned */}
+      {/* SMS Text - Aligned to baseline y=52 */}
       <text
-        x="110"
-        y="58"
-        fontSize="52"
+        x="75"
+        y="52"
+        fontSize="42"
         fontWeight="900"
         fill="white"
         fontFamily="Arial, Helvetica, sans-serif"
-        letterSpacing="3"
+        letterSpacing="1"
+        textAnchor="start"
+        dominantBaseline="middle"
       >
         SMS
       </text>
 
-      {/* Spacing gap between SMS and Shanxin */}
-      {/* Shanxin Text (Chinese) - Properly spaced */}
+      {/* Shanxin Text (Chinese) - Aligned to baseline y=52, closer spacing */}
       <text
-        x="250"
-        y="58"
-        fontSize="44"
+        x="195"
+        y="52"
+        fontSize="38"
         fontWeight="900"
         fill="white"
         fontFamily="Arial, Helvetica, sans-serif"
-        letterSpacing="2"
+        letterSpacing="0"
+        textAnchor="start"
+        dominantBaseline="middle"
       >
         闪信
       </text>

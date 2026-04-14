@@ -76,10 +76,7 @@ const Footer = ({ language }: FooterProps) => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-optimized-jnMoFmxbhXhVefQMVihhgd.webp" alt="SMS Logo" className="h-10 w-auto" />
-              <div>
-                <h3 className="text-white font-bold text-lg">{t.company}</h3>
-              </div>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-final-YCdn5tfVrBM6XQ5NJhoLAQ.webp" alt="SMS 闪信" className="h-12 w-auto" />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">{t.tagline}</p>
           </div>

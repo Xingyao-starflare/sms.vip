@@ -37,7 +37,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-optimized-jnMoFmxbhXhVefQMVihhgd.webp" alt="SMS Logo" className="h-10 w-auto" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-final-YCdn5tfVrBM6XQ5NJhoLAQ.webp" alt="SMS 闪信" className="h-12 w-auto" />
             </a>
           </Link>
 

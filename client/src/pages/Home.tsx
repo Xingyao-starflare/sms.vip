@@ -422,10 +422,10 @@ const Home = () => {
                     <th className="text-left py-4 px-6 text-white font-semibold">
                       {language === 'zh' ? '国家' : 'Country'}
                     </th>
-                    <th className="text-left py-4 px-6 text-white font-semibold">
+                    <th className="text-left py-4 px-3 md:px-6 text-white font-semibold whitespace-nowrap text-sm md:text-base">
                       {language === 'zh' ? '国家代码' : 'Code'}
                     </th>
-                    <th className="text-left py-4 px-6 text-white font-semibold">
+                    <th className="text-left py-4 px-3 md:px-6 text-white font-semibold whitespace-nowrap text-sm md:text-base">
                       {language === 'zh' ? '单价' : 'Price'} ({currentPricing.unit})
                     </th>
                   </tr>

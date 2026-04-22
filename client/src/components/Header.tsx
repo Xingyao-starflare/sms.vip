@@ -38,7 +38,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center hover:opacity-80 transition-opacity mr-6">
-              <Logo className="h-16 w-auto" />
+              <Logo className="h-12 w-auto" />
             </a>
           </Link>
 

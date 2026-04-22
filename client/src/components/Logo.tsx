@@ -1,28 +1,22 @@
 import { cn } from "@/lib/utils";
-import logoImage from '@/assets/logo.png';
+import logoImage from '@/assets/logo_core.png';
 
 interface LogoProps {
   className?: string;
-  /**
-   * Whether to apply filters to the logo.
-   * For the new colorful logo, we might want to keep its original colors.
-   */
-  useOriginalColor?: boolean;
 }
 
-const Logo = ({ className, useOriginalColor = true }: LogoProps) => {
+const Logo = ({ className }: LogoProps) => {
   return (
     <div className={cn("flex items-center justify-start", className)}>
       <img
         src={logoImage}
         alt="SMS 闪信"
-        className={cn(
-          "h-full w-auto object-contain transition-all duration-300",
-          !useOriginalColor && "brightness-0 invert"
-        )}
+        className="h-full w-auto object-contain transition-all duration-300"
         style={{ 
+          // 增加亮度使 Logo 在深色背景下更显眼
+          filter: 'brightness(1.1) drop-shadow(0 0 8px rgba(34, 211, 238, 0.3))',
+          // 确保 Logo 比例正确
           maxHeight: '100%',
-          filter: !useOriginalColor ? 'brightness(0) invert(1) opacity(0.95)' : 'drop-shadow(0 0 2px rgba(0,0,0,0.3))',
         }}
       />
     </div>

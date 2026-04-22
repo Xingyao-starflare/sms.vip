@@ -319,7 +319,7 @@ const Home = () => {
       <Header language={language} onLanguageChange={setLanguage} />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 px-4 overflow-hidden">
+      <section className="relative pt-40 pb-12 px-4 overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 z-0 opacity-30"

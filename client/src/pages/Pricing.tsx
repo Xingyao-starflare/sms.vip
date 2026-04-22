@@ -14,7 +14,7 @@ const Pricing = () => {
     zh: {
       title: '价格',
       subtitle: '透明的价格体系，满足不同需求',
-      description: '选择适合您的服务，享受优质的国际短信和语音服务',
+      description: '随时享受优质的国际短信和语音服务',
       tabs: {
         message: '营销短信',
         voice: '验证码',
@@ -145,7 +145,7 @@ const Pricing = () => {
       <Header language={language} onLanguageChange={setLanguage} />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4">
+      <section className="pt-24 pb-10 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
             {t.title}
@@ -160,7 +160,7 @@ const Pricing = () => {
       </section>
 
       {/* Pricing Tabs */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
           {/* Tab Buttons */}
           <div className="flex justify-center gap-4 mb-12">
@@ -230,7 +230,7 @@ const Pricing = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 bg-slate-900/50">
+      <section className="py-12 px-4 bg-slate-900/50">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">
             {t.faq.title}
@@ -247,7 +247,7 @@ const Pricing = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             {language === 'zh' ? '准备好了吗？' : 'Ready to Get Started?'}

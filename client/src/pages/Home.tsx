@@ -22,7 +22,7 @@ const Home = () => {
       pricing: {
         title: '价格',
         subtitle: '透明的价格体系，满足不同需求',
-        description: '选择适合您的服务，享受优质的国际短信和语音服务',
+        description: '随时享受优质的国际短信和语音服务',
         tabs: {
           message: '营销短信',
           voice: '验证码',
@@ -319,7 +319,7 @@ const Home = () => {
       <Header language={language} onLanguageChange={setLanguage} />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+      <section className="relative pt-24 pb-12 px-4 overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 z-0 opacity-30"
@@ -372,9 +372,9 @@ const Home = () => {
       </section>
 
       {/* Pricing Section - Moved to Top */}
-      <section className="py-20 px-4 bg-slate-900/50">
+      <section className="py-12 px-4 bg-slate-900/50">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {t.pricing.title}
             </h2>
@@ -454,7 +454,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {t.stats.items.map((stat, index) => (
@@ -470,9 +470,9 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4 bg-slate-900/50">
+      <section className="py-12 px-4 bg-slate-900/50">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {t.features.title}
             </h2>
@@ -494,9 +494,9 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {t.services.title}
             </h2>
@@ -523,9 +523,9 @@ const Home = () => {
       </section>
 
       {/* FAQ Section - 2 Column Layout */}
-      <section className="py-20 px-4 bg-slate-900/50">
+      <section className="py-12 px-4 bg-slate-900/50">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">
             {t.faq.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -540,7 +540,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
           <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg p-12 md:p-16 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

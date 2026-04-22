@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import logoImage from '@/assets/logo.webp';
 
 interface LogoProps {
   className?: string;
@@ -14,7 +15,7 @@ const Logo = ({ className, forceWhite = true }: LogoProps) => {
   return (
     <div className={cn("flex items-center justify-center", className)}>
       <img
-        src="https://d2xsxph8kpxj0f.cloudfront.net/310519663274490737/JNnADWDHhxVcCNh3co2tRK/sms-logo-optimized_03d08656.png"
+        src={logoImage}
         alt="SMS 闪信"
         className={cn(
           "h-full w-auto object-contain transition-all duration-300",

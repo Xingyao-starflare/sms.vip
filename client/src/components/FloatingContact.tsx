@@ -6,7 +6,7 @@ const FloatingContact = () => {
   const [showWhatsApp, setShowWhatsApp] = useState(false);
 
   return (
-    <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 flex flex-col items-center gap-4">
+    <div className="fixed right-6 bottom-6 z-40 flex flex-col items-center gap-4">
       {/* Telegram Icon Button */}
       <div className="relative group">
         <a

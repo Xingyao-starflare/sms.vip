@@ -39,7 +39,6 @@ const Home = () => {
               { name: '墨西哥', code: 'MX', price: '0.0023' },
               { name: '菲律宾', code: 'PH', price: '0.0060' },
               { name: '孟加拉', code: 'BD', price: '0.0063' },
-              { name: '巴基斯坦', code: 'PK', price: '0.0064' },
               { name: '印度尼西亚', code: 'ID', price: '0.0062' },
             ],
           },
@@ -54,7 +53,6 @@ const Home = () => {
               { name: '墨西哥', code: 'MX', price: '0.0022' },
               { name: '菲律宾', code: 'PH', price: '0.0054' },
               { name: '孟加拉', code: 'BD', price: '0.0042' },
-              { name: '巴基斯坦', code: 'PK', price: '0.0120' },
               { name: '印度尼西亚', code: 'ID', price: '0.0282' },
             ],
           }
@@ -190,7 +188,6 @@ const Home = () => {
               { name: 'Mexico', code: 'MX', price: '0.0023' },
               { name: 'Philippines', code: 'PH', price: '0.0060' },
               { name: 'Bangladesh', code: 'BD', price: '0.0063' },
-              { name: 'Pakistan', code: 'PK', price: '0.0064' },
               { name: 'Indonesia', code: 'ID', price: '0.0062' },
             ],
           },
@@ -205,7 +202,6 @@ const Home = () => {
               { name: 'Mexico', code: 'MX', price: '0.0022' },
               { name: 'Philippines', code: 'PH', price: '0.0054' },
               { name: 'Bangladesh', code: 'BD', price: '0.0042' },
-              { name: 'Pakistan', code: 'PK', price: '0.0120' },
               { name: 'Indonesia', code: 'ID', price: '0.0282' },
             ],
           }

@@ -71,14 +71,14 @@ const Footer = ({ language }: FooterProps) => {
   const t = content[language];
 
   return (
-    <footer className="bg-gradient-to-b from-slate-900 to-slate-950 border-t border-slate-700 mt-20">
+    <footer className="bg-gradient-to-b from-slate-900 to-slate-950 border-t border-slate-700 mt-12">
       <div className="container mx-auto px-4 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <Logo className="h-32 w-auto" />
+              <Logo className="h-16 w-auto" />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">{t.tagline}</p>
           </div>

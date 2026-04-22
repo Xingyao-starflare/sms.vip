@@ -1,31 +1,28 @@
 import { cn } from "@/lib/utils";
-import logoImage from '@/assets/logo.webp';
+import logoImage from '@/assets/logo.png';
 
 interface LogoProps {
   className?: string;
   /**
-   * Whether to force the logo to be white using CSS filters.
-   * Useful for dark backgrounds to ensure visibility.
-   * Defaults to true as the site uses a dark theme.
+   * Whether to apply filters to the logo.
+   * For the new colorful logo, we might want to keep its original colors.
    */
-  forceWhite?: boolean;
+  useOriginalColor?: boolean;
 }
 
-const Logo = ({ className, forceWhite = true }: LogoProps) => {
+const Logo = ({ className, useOriginalColor = true }: LogoProps) => {
   return (
-    <div className={cn("flex items-center justify-center", className)}>
+    <div className={cn("flex items-center justify-start", className)}>
       <img
         src={logoImage}
         alt="SMS 闪信"
         className={cn(
           "h-full w-auto object-contain transition-all duration-300",
-          forceWhite && "brightness-0 invert"
+          !useOriginalColor && "brightness-0 invert"
         )}
         style={{ 
-          // Ensure contrast ratio is maintained on dark backgrounds
-          // Set opacity to 0.95 for natural blending with background
-          filter: forceWhite ? 'brightness(0) invert(1) opacity(0.95)' : undefined,
-          opacity: forceWhite ? 0.95 : 1
+          maxHeight: '100%',
+          filter: !useOriginalColor ? 'brightness(0) invert(1) opacity(0.95)' : 'drop-shadow(0 0 2px rgba(0,0,0,0.3))',
         }}
       />
     </div>

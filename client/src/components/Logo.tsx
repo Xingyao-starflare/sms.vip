@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import logoImage from '@/assets/logo_core.png';
+import logoImage from '@/assets/logo_new.png';
 
 interface LogoProps {
   className?: string;
@@ -13,9 +13,8 @@ const Logo = ({ className }: LogoProps) => {
         alt="SMS 闪信"
         className="h-full w-auto object-contain transition-all duration-300"
         style={{ 
-          // 增加亮度使 Logo 在深色背景下更显眼
-          filter: 'brightness(1.1) drop-shadow(0 0 8px rgba(34, 211, 238, 0.3))',
-          // 确保 Logo 比例正确
+          // 确保 Logo 在深色背景下清晰，并移除不必要的滤镜
+          filter: 'drop-shadow(0 0 4px rgba(34, 211, 238, 0.2))',
           maxHeight: '100%',
         }}
       />

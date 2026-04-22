@@ -145,15 +145,15 @@ const Pricing = () => {
       <Header language={language} onLanguageChange={setLanguage} />
 
       {/* Hero Section */}
-      <section className="pt-40 pb-10 px-4">
+      <section className="pt-24 md:pt-40 pb-10 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-3xl md:text-6xl font-bold text-white mb-4">
             {t.title}
           </h1>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-4">
+          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-4">
             {t.subtitle}
           </p>
-          <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto">
             {t.description}
           </p>
         </div>
@@ -249,7 +249,7 @@ const Pricing = () => {
       {/* CTA Section */}
       <section className="py-12 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
             {language === 'zh' ? '准备好了吗？' : 'Ready to Get Started?'}
           </h2>
           <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">

@@ -38,7 +38,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center hover:opacity-80 transition-opacity mr-6">
-              <Logo className="h-32 w-auto" />
+              <Logo className="h-16 md:h-32 w-auto" />
             </a>
           </Link>
 
@@ -60,13 +60,13 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
           </nav>
 
           {/* Right Controls */}
-          <div className="flex items-center gap-4 ml-auto">
+          <div className="flex items-center gap-2 md:gap-4 ml-auto">
             {/* Login Button - Moved to front for mobile visibility */}
             <a
               href="https://ok.sms.vip"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2.5 rounded-lg transition-colors font-semibold h-10 whitespace-nowrap"
+              className="flex items-center gap-1 md:gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-2 md:px-4 py-2 rounded-lg transition-colors font-semibold h-9 md:h-10 whitespace-nowrap text-sm md:text-base"
             >
               <Globe className="w-4 h-4" />
               {language === 'zh' ? '登录' : 'Login'}

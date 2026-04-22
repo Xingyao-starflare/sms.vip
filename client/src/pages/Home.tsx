@@ -319,7 +319,7 @@ const Home = () => {
       <Header language={language} onLanguageChange={setLanguage} />
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-12 px-4 overflow-hidden">
+      <section className="relative pt-24 md:pt-40 pb-12 px-4 overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 z-0 opacity-30"
@@ -335,16 +335,16 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+              <h1 className="text-3xl md:text-6xl font-bold text-white mb-4 leading-tight">
                 {t.hero.title}
               </h1>
-              <p className="text-2xl md:text-3xl text-cyan-400 font-semibold mb-4">
+              <p className="text-xl md:text-3xl text-cyan-400 font-semibold mb-4">
                 {t.hero.subtitle}
               </p>
-              <p className="text-lg md:text-xl text-cyan-300 font-semibold mb-6 pb-4 border-b border-cyan-400/30">
+              <p className="text-base md:text-xl text-cyan-300 font-semibold mb-6 pb-4 border-b border-cyan-400/30">
                 {t.hero.slogan}
               </p>
-              <p className="text-lg text-slate-300 mb-8 leading-relaxed">
+              <p className="text-base md:text-lg text-slate-300 mb-8 leading-relaxed">
                 {t.hero.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -375,13 +375,13 @@ const Home = () => {
       <section className="py-12 px-4 bg-slate-900/50">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               {t.pricing.title}
             </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-4">
+            <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-4">
               {t.pricing.subtitle}
             </p>
-            <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto">
               {t.pricing.description}
             </p>
           </div>
@@ -473,7 +473,7 @@ const Home = () => {
       <section className="py-12 px-4 bg-slate-900/50">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               {t.features.title}
             </h2>
           </div>
@@ -497,7 +497,7 @@ const Home = () => {
       <section className="py-12 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               {t.services.title}
             </h2>
             <p className="text-xl text-slate-400">{t.services.description}</p>
@@ -543,7 +543,7 @@ const Home = () => {
       <section className="py-12 px-4">
         <div className="container mx-auto">
           <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg p-12 md:p-16 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               {t.cta.title}
             </h2>
             <p className="text-lg text-slate-100 mb-8 max-w-2xl mx-auto">

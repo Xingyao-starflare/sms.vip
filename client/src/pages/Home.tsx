@@ -349,7 +349,7 @@ const Home = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://t.me/sms_shanxin"
+                href="https://t.me/wwwsmsvip"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block btn-gradient px-8 py-4 rounded-lg font-semibold text-white"
@@ -550,7 +550,7 @@ const Home = () => {
               {t.cta.description}
             </p>
             <a
-              href="https://t.me/sms_shanxin"
+              href="https://t.me/wwwsmsvip"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-cyan-600 hover:bg-slate-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors duration-300"

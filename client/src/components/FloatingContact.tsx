@@ -10,7 +10,7 @@ const FloatingContact = () => {
       {/* Telegram Icon Button */}
       <div className="relative group">
         <a
-          href="https://t.me/sms_shanxin"
+          href="https://t.me/wwwsmsvip"
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-full bg-cyan-500 hover:bg-cyan-600 text-white flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110"
@@ -21,7 +21,7 @@ const FloatingContact = () => {
         </a>
         {showTelegram && (
           <div className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-cyan-500 text-white px-3 py-2 rounded-lg whitespace-nowrap text-sm font-semibold shadow-lg animate-fade-in-up">
-            Telegram: @sms_shanxin
+            Telegram: @wwwsmsvip
           </div>
         )}
       </div>

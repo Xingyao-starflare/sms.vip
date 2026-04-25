@@ -258,7 +258,7 @@ const Pricing = () => {
               : 'Contact us now to get personalized quotes and solutions.'}
           </p>
           <a
-            href="https://t.me/sms_shanxin"
+            href="https://t.me/wwwsmsvip"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gradient px-8 py-4 rounded-lg font-semibold text-white inline-block"

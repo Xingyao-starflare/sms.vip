@@ -29,7 +29,7 @@ const Footer = ({ language }: FooterProps) => {
         contact: {
           title: '联系我们',
           items: [
-            { label: 'Telegram: @sms_shanxin', href: 'https://t.me/sms_shanxin' },
+            { label: 'Telegram: @wwwsmsvip', href: 'https://t.me/wwwsmsvip' },
             { label: 'WhatsApp: +852 6856 1065', href: 'https://wa.me/85268561065' },
           ],
         },
@@ -59,7 +59,7 @@ const Footer = ({ language }: FooterProps) => {
         contact: {
           title: 'Contact',
           items: [
-            { label: 'Telegram: @sms_shanxin', href: 'https://t.me/sms_shanxin' },
+            { label: 'Telegram: @wwwsmsvip', href: 'https://t.me/wwwsmsvip' },
             { label: 'WhatsApp: +852 6856 1065', href: 'https://wa.me/85268561065' },
           ],
         },
